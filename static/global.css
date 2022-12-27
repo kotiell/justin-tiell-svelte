@@ -10,16 +10,20 @@ img {
 	border-radius: 8px;
 }
 
+li{
+  font-size: 1.125rem;
+}
+
 .container {
 	width: 100%;
 	margin: 0 auto;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+	padding: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .skill_section {
 	display: grid;
-	gap: 4rem;
+	gap: 2rem;
 	grid-template-columns: 1fr;
 }
 
@@ -29,18 +33,18 @@ img {
 
 .main_section {
 	display: grid;
-	gap: 2rem;
-	grid-template-columns: 200px 1fr;
+	gap: 0;
+	grid-template-rows: repeat(2,1fr);
 }
 
-.main_section_content{
-  align-self: center;
+.main_section_content {
+	align-self: center;
 }
 
-.main_section p{
-  margin-top: 0;
-  font-size: 1.125rem;
-  line-height: 1.4;
+.main_section p {
+	margin-top: 0;
+	font-size: 1.125rem;
+	line-height: 1.4;
 }
 
 @media screen and (min-width: 900px) {
@@ -50,5 +54,11 @@ img {
 
 	.skill_section {
 		grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+	}
+	.main_section {
+		grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 4rem;
 	}
 }
